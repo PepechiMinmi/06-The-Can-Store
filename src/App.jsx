@@ -91,7 +91,7 @@ export default function App() {
                 <section className={product.type} key={index}>
                   <h2>{product.name}</h2>
                   <p>${product.price.toFixed(2)}</p>
-                  <img src={`public/images/${product.image}`} alt={product.name}//画像パス出来た
+                  <img src={`${process.env.PUBLIC_URL}/images/${product.image}`} alt={product.name}
                   />
                 </section>
                 ))
